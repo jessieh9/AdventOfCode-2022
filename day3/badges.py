@@ -15,7 +15,6 @@ for i in range(len(contents)):
     index += 3
     group = contents[start:index]
     start = index
-
     if group != []:
         for j in range(len(group)):
             if len(group[j].rstrip()) < length:

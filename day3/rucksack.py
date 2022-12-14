@@ -10,7 +10,6 @@ total = 0
 for i in range(len(contents)):
     length = len(contents[i].rstrip())
     ind = int(length/2)
-
     tempOne = contents[i][0:ind]
     tempTwo = contents[i][ind:]
 
