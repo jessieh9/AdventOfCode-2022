@@ -11,7 +11,7 @@ for i in range(len(content)):
     if content[i].rstrip() != '':
         temp_list.append(int(content[i].rstrip()))
         pos += 1
-    else:  # if it is a space
+    else:  # if it is space
         start = pos
         pos = 0
         temp_list = []
