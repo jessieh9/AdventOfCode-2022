@@ -16,7 +16,6 @@ def score(opp, me):
         total.append(score)
     return total
 
-
 file = open("day2/strat.txt")
 content = file.readlines()
 total = []
