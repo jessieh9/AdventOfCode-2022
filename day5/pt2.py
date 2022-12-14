@@ -29,8 +29,10 @@ for i in content:
     movingstacks = start[contents[1]][:contents[0]] # [D, C, Z]
     start[contents[2]] = movingstacks + start[contents[2]]
 
+    # clear the stack from its original column
     start[contents[1]] = start[contents[1]][contents[0]:]
 
 for key in start:
-    print(start[key][0])
+    s += start[key][0]
+print(s)
 

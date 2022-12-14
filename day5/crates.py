@@ -27,11 +27,11 @@ for i in content:
     contents.extend(numbers) #[3, '2', '1']
     contents = [int(j) for j in contents] #[3, 2, 1]
     
-    # move the stacks from one column to the next
+    # move the stacks from one column to the next 
     movingstacks = start[contents[1]][:contents[0]][::-1] #[Z, C, D]
     start[contents[2]] = movingstacks + start[contents[2]] #[Z, C, D] + list("HLRFBCJM")
 
-    # clear the stack from its original column
+    # clear the stack from the original column
     start[contents[1]] = start[contents[1]][contents[0]:]
 
 for key in start:
